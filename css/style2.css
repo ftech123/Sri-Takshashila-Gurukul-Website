@@ -1,0 +1,275 @@
+/* General Styling */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Add a modern font */
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    max-width: 97%; /* Adjust the percentage as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Carousel Image */
+.carousel-image {
+    max-height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    width: 100%; /* Ensure images fill the width */
+}
+
+/* Center the carousel items */
+.owl-carousel-item {
+    height: 400px; /* Set the same height as the images for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .carousel-wrapper {
+        max-width: 90%;
+    }
+
+    .carousel-image, .owl-carousel-item {
+        max-height: 300px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        max-width: 95%;
+    }
+
+    .carousel-image, .owl-carousel-item {
+        max-height: 200px; /* Adjust for even smaller screens */
+    }
+}
+
+/* Card Styling */
+.card-custom-width {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the card */
+}
+
+.container-xxl {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+}
+
+.card {
+    border: 1px solid #545353;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D effect */
+    transition: transform 0.3s; /* Animation */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover animation */
+}
+
+.card-header {
+    background-color: #6c757d; /* Change header color for a more professional look */
+    color: #fff;
+    font-weight: bold;
+    text-align: center; /* Center the header text */
+    padding: 15px; /* Add padding for better spacing */
+}
+
+.card-body .alert {
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.card-body .alert:hover {
+    transform: translateY(-5px); /* Hover animation */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 3D effect */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    min-width: 200px; /* Adjust this width as needed */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-item {
+    padding: 10px 20px; /* Increase padding for better spacing */
+    color: #333; /* Dark text for readability */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Light background on hover */
+    border-radius: 3px; /* Rounded corners on hover */
+}
+
+/* Contact Section */
+.contact-title {
+    margin-top: 2%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    transform: perspective(1000px) rotateX(5deg);
+    text-align: center; /* Center the title */
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 35px;
+    transform: perspective(1000px) rotateX(5deg);
+    text-align: center; /* Center the subtitle */
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    transform: perspective(1000px) rotateX(5deg);
+    text-align: center; /* Center the contact information */
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 1.5rem; /* Adjusted font size for consistency */
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #a41010;
+    margin: 0 10px; /* Adjust margins for better spacing */
+    /* border: 1px solid black; */
+    /* padding: 2%; */
+    /* border-radius: 20%; */
+
+}
+
+
+.contact-container {
+    transform: rotateY(5deg);
+}
+
+/* Form Styling */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.contact-form select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20' width='30' height='20'%3E%3Cpath fill='%23676767' d='M15 19.3L0 4.3 1.4 3 15 16.6 28.6 3 30 4.3z'/%3E%3C/svg%3E") no-repeat right center;
+    background-size: 15px;
+    padding-right: 30px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: none; /* Reset transform */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+.popup-content {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+#popupBtn, #backToTopBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px; /* Centers the icon vertically */
+}
+
+#backToTopBtn  {
+    left: 20px;
+}
+
+#popupBtn {
+    right: 20px;
+}
+
+/* Style for icons */
+.btn i {
+    font-size: 1.5rem;
+}
+
+/* Style for the list */
+.sc-v2p3h2-0.glTguz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sc-v2p3h2-0.glTguz a {
+    margin-bottom: 10px; /* Adjust spacing between icons */
+}
+/* Basic styling for the video container */
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for individual video */
+  #videos div {
+    margin: 10px;
+    flex: 1 1 300px; /* Adjust width as needed */
+    max-width: 300px; /* Adjust width as needed */
+  }
+  
+  /* Styling for video thumbnail */
+  #videos img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styling for video title */
+  #videos h2 {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #333;
+  }
